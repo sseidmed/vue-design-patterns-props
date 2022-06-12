@@ -25,12 +25,12 @@ const props = defineProps({
 
 <script>
 
-const validateMessage = (message) => {
+export const validateMessage = (message) => {
     if (!['I am the default message', 'Clean your room', 'Take out the trash', 'Find the remote'].includes(message)) {
         throw Error(`Message not identified. You provided: ${message}.`)
     }
 }
-export default {}
+
 </script>
 
 
